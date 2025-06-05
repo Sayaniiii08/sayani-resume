@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayani Mondal - Developer Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="pic.jpg" alt="Sayani Mondal Photo" />
+      <div>
+        <h1>Sayani Mondal</h1>
+        <p>Kolkata, India | +91 8910000599 | <a href="mailto:msayani0805@gmail.com">msayani0805@gmail.com</a></p>
+        <p>
+          <a href="https://linkedin.com/in/sayani-mondal-7220ab24b" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Sayaniiii08" target="_blank">GitHub</a> |
+          <a href="https://github.com/Sayaniiii08" target="_blank">Portfolio</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Profile</h2>
+      <p>Final-year CSE student with leadership experience and a strong foundation in full-stack development. Passionate about AI, ML, Python, and building efficient web applications with intelligent systems.</p>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in CSE</strong>, KIIT University, Bhubaneswar (2022–2026)</li>
+        <li><strong>10+2</strong>, Bidhannagar Govt. High School, Kolkata – PCM, Computer SCience (2022)</li>
+        <li><strong>10th</strong>, Christ Church Girls High School, Kolkata (2020)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Campus Ambassador</strong>, Cisco, Bhubaneswar (Oct 2024 – Present)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Internships</h2>
+      <ul>
+        <li><strong>Summer Intern</strong> at M/s Sahu Constructions, Ranchi (May 2024 – July 2024)<br>
+         &gt; Worked with relational databases; managed SQL queries for data retrieval, aggregation, and reporting. <br>
+         &gt; Assisted in optimizing database performance and automating recurring reports. 
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Wellify – Health Gamification App</strong><br>
+      &gt; Developed a cross-platform mobile app UI using React Native and Expo with smooth navigation, theme support, and user-friendly layout.<br>
+      &gt; Integrated Python-based ML models via REST APIs. Built ML modules using algorithms like Naive Bayes and Random Forest to analyse trends, filter spam etc.
+    </li>
+    <li>
+      <strong>DevMall</strong><br>
+      &gt; A job portal aggregator using HTML, CSS, JavaScript, and Node.js to fetch and display career pages of top tech companies.<br>
+      &gt; Implemented dynamic filtering, live job link rendering, and local logo assets without any database dependency.<br>
+      &gt; Built a responsive, search-driven UI and lightweight Express.js backend for seamless user experience.
+    </li>
+  </ul>
+</div>
+
+
+    <div class="section skills">
+      <h2>Skills</h2>
+      <span>Java</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>React</span><span>Node.js</span><span>Tailwind</span><span>Bootstrap</span><span>Express</span>
+      <span>SQL</span><span>REST API</span><span>MS Azure</span><span>MS Excel</span><span>Git</span>
+      <span>AI/ML</span><span>GenAI</span><span>SEO</span><span>Digital Marketing</span>
+    </div>
+
+    <div class="section languages">
+      <h2>Languages</h2>
+      <span>English</span><span>Hindi</span><span>Bengali</span>
+    </div>
+  </div>
+  <button id="downloadBtn">Download PDF</button>
+<script src="html2pdf.bundle.min.js"></script>
+
+<script>
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    const resume = document.querySelector(".container");
+    html2pdf().set({
+      margin: 0,
+      filename: 'Sayani_Mondal_Resume.pdf',
+      image: { type: 'jpeg', quality: 1 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+    }).from(resume).save();
+  });
+</script>
+
+
+<!-- Load html2pdf library first -->
+<script src="html2pdf.bundle.min.js"></script>
+
+<!-- Then run the script -->
+
+<script>
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    const resume = document.querySelector(".container");
+    html2pdf().set({
+      margin: 0,
+      filename: 'Sayani_Mondal_Resume.pdf',
+      image: { type: 'jpeg', quality: 1 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+    }).from(resume).save();
+  });
+</script>
+
+
+
+
+</body>
+</html>
